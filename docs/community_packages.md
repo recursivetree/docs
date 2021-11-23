@@ -88,6 +88,7 @@ After running the above command wait for containers affected to rebuild. If SeAT
 | [warlof/seat-connector](https://github.com/warlof/seat-connector) | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-connector/v/stable?format=flat-square)](https://packagist.org/packages/warlof/seat-connector) | A generic connector module that handles invites and roles management with any registered platform |
 | [warlof/seat-discord-connector](https://github.com/warlof/seat-discord-connector) | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-discord-connector/v/stable?format=flat-square)](https://packagist.org/packages/warlof/seat-discord-connector) | A Discord driver to be used with `seat-connector` |
 | [warlof/seat-teamspeak](https://github.com/warlof/seat-teamspeak) | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-teamspeak/v/stable?format=flat-square)](https://packagist.org/packages/warlof/seat-teamspeak) | A Teamspeak driver to be used with `seat-connector` |
+| [recursivetree/seat-info](https://github.com/recursivetree/seat-info) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-info/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-info) | A module that adds a small article systems for example as a corporation bulletin |
 
 #### Incompatible packages with current stable SeAT version
 
