@@ -89,6 +89,7 @@ After running the above command wait for containers affected to rebuild. If SeAT
 | [warlof/seat-discord-connector](https://github.com/warlof/seat-discord-connector) | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-discord-connector/v/stable?format=flat-square)](https://packagist.org/packages/warlof/seat-discord-connector) | A Discord driver to be used with `seat-connector` |
 | [warlof/seat-teamspeak](https://github.com/warlof/seat-teamspeak) | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-teamspeak/v/stable?format=flat-square)](https://packagist.org/packages/warlof/seat-teamspeak) | A Teamspeak driver to be used with `seat-connector` |
 | [recursivetree/seat-info](https://github.com/recursivetree/seat-info) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-info/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-info) | A module that adds a small article systems for example as a corporation bulletin |
+| [recursivetree/seat-rat](https://github.com/recursivetree/seat-rat) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-rat/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-rat) | A module to monitor ratting usage in a system, e.g. to prevent dropping the bounty risk modifier in nullsec. |
 
 #### Incompatible packages with current stable SeAT version
 
