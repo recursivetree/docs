@@ -98,12 +98,12 @@ After running the above command wait for containers affected to rebuild. If SeAT
 | [recursivetree/seat-info](https://github.com/recursivetree/seat-info) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-info/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-info) | A module that adds a small article systems for example as a corporation bulletin |
 | [recursivetree/seat-rat](https://github.com/recursivetree/seat-rat) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-rat/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-rat) | A module to monitor ratting usage in a system, e.g. to prevent dropping the bounty risk modifier in nullsec. |
 | [simplyunnamed/seat-user-last-login](https://github.com/SimplyUnnamed/seat-user-last-logins) | [![Latest Stable Version](http://poser.pugx.org/simplyunnamed/seat-user-last-login/v)](https://packagist.org/packages/simplyunnamed/seat-user-last-login) | Tool to help find potential AFK's in your corporation. |
+| [recursivetree/seat-billing](https://github.com/recursivetree/seat-billing) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-billing/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-billing) | A billing module to help you with ore and rating taxes |
 
 #### Incompatible packages with current stable SeAT version
 
 | Package | Version | Description |
 | ------- | ------- | ----------- |
-| [denngarr/seat-billing](https://github.com/dysath/seat-billing) | [![Latest Stable Version](https://poser.pugx.org/denngarr/seat-billing/v/stable?format=flat-square)](https://packagist.org/packages/denngarr/seat-billing) | A billing module to help you with ore and rating taxes **(Looking for a new maintainer)** |
 | [flyingferret/seat-whtools](https://github.com/flyingferret/seat-whtools) | [![Latest Stable Version](https://poser.pugx.org/flyingferret/seat-whtools/v/stable?format=flat-square)](https://packagist.org/packages/flyingferret/seat-whtools) | A small collection of tools for helping with Wh-Life corporation management, including calculating doctrine stocking levels (based on contracts and `denngarr/seat-fitting` plugin), a blue loot tax calculator, and a skill base certificate management.  Currently very much a  work in progress. |
 | [warlof/slackbot](https://github.com/warlof/slackbot) | [![Latest Stable Version](https://poser.pugx.org/warlof/slackbot/v/stable?format=flat-square)](https://packagist.org/packages/warlof/slackbot) | A slack bot that handles invites and kicks based on an api key |
 
