@@ -86,6 +86,7 @@ After running the above command wait for containers affected to rebuild. If SeAT
 | Package | Version | Description |
 | ------- | ------- | ----------- |
 | [alliancewaw/seat-mumble-register](https://github.com/waw-eve/seat-mumble-register) | [![Latest Stable Version](https://poser.pugx.org/alliancewaw/seat-mumble-register/v/stable)](https://packagist.org/packages/alliancewaw/seat-mumble-register) | This plugin provide an extension to generate a certificate for SeAT user and regist it to mumble server |
+| [cryocaustik/seat-hr](https://github.com/cryocaustik/seat-hr) | [![Latest Stable Version](http://poser.pugx.org/cryocaustik/seat-hr/v/stable)](https://packagist.org/packages/cryocaustik/seat-hr) | Human Resources plugin for SeAT with Applications (with customized questions per corporation), Blacklist, Intel, Kick History, Notes, and Sheet |
 | [cryptaeve/seat-squad-sync](https://github.com/crypta-eve/seat-squad-sync ) | [![Latest Stable Version](https://poser.pugx.org/cryptaeve/seat-squad-sync/v/stable?format=flat-square)](https://packagist.org/packages/crypta-eve/seat-squad-sync ) | Adds the ability to sync squad members into filters of permissions |
 | [cryptaeve/seat-text](https://github.com/crypta-eve/seat-text) | [![Latest Stable Version](https://poser.pugx.org/cryptaeve/seat-text/v/stable?format=flat-square)](https://packagist.org/packages/crypta-eve/seat-text) | A module to serve public static ascii, with editing access controlled by seat |
 | [denngarr/seat-fitting](https://github.com/dysath/seat-fitting) | [![Latest Stable Version](https://poser.pugx.org/denngarr/seat-fitting/v/stable)](https://packagist.org/packages/denngarr/seat-fitting) | Module to check fittings per character |
@@ -101,6 +102,8 @@ After running the above command wait for containers affected to rebuild. If SeAT
 | [simplyunnamed/seat-user-last-login](https://github.com/SimplyUnnamed/seat-user-last-logins) | [![Latest Stable Version](http://poser.pugx.org/simplyunnamed/seat-user-last-login/v)](https://packagist.org/packages/simplyunnamed/seat-user-last-login) | Tool to help find potential AFK's in your corporation. |
 | [recursivetree/seat-billing](https://github.com/recursivetree/seat-billing) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-billing/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-billing) | A billing module to help you with ore and rating taxes |
 | [recursivetree/seat-pushx-blamer](https://github.com/recursivetree/seat-pushx-blamer) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-pushx-blamer/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-pushx-blamer) | A module to tell you who's guilty of blocking the PushX queue. |
+| [recursivetree/seat-alliance-industry](https://github.com/recursivetree/seat-alliance-industry) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-alliance-industry/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-alliance-industry) | A corporation/alliance/coalition industry order marketplace |
+| [recursivetree/seat-inventory](https://github.com/recursivetree/seat-inventory) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-inventory/v/stable?format=flat-square)](https://packagist.org/packages/recursivetree/seat-inventory) | Inventory manager for contracts and corporation hangars |
 
 #### Incompatible packages with current stable SeAT version
 
@@ -122,10 +125,13 @@ After running the above command wait for containers affected to rebuild. If SeAT
 | [warlof/seat-slack-sso](https://github.com/warlof/seat-slack-sso) | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-slack-sso/v/stable?format=flat-square)](https://packagist.org/packages/warlof/seat-slack-sso) | Slack SSO integration for seat 2.x |
 | [warlof/eveseat-mining-ledger](https://github.com/warlof/eveseat-mining-ledger) | [![Latest Stable Version](https://poser.pugx.org/warlof/eveseat-mining-ledger/v/stable?format=flat-square)](https://github.com/warlof/eveseat-mining-ledger) | ESI capability that provides a mining ledger to SeAT 2.x |
 
-!!! danger
-    Packages in this section are provided as history and idea database. They will not work on the stable version since they are non longer maintained by their author or have been integrated in core.
-
 ### Other SeAT related packages
+
+- [nullsecurity-australia/helm-charts](https://github.com/nullsecurity-australia/helm-charts/tree/main/charts/eveseat)
+Allows to install EVE SeAT on a Kubernetes Cluster
+
+!!! danger
+    Packages after this message are provided as history and idea database. They will not work on the stable version since they are non longer maintained by their author or have been integrated in core.
 
 - [Betriebsrat/err-seat](https://github.com/Betriebsrat/err-seat)  
 Seat Api Interface for errbot
@@ -133,5 +139,4 @@ Seat Api Interface for errbot
 Passport strategy for authenticating with EVE SeAT using the OAuth 2.0 API.
 - [eve-scout/nodebb-plugin-sso-eveseat](https://github.com/eve-scout/nodebb-plugin-sso-eveseat)  
 This NodeBB plugin allows users login/register via their EVE SeAT account.
-- [tarioch/helm](https://github.com/tarioch/helm/tree/master/charts/eveseat)
-Allows to install EVE SeAT on a Kubernetes Cluster
+
