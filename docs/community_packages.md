@@ -141,3 +141,25 @@ Passport strategy for authenticating with EVE SeAT using the OAuth 2.0 API.
 - [eve-scout/nodebb-plugin-sso-eveseat](https://github.com/eve-scout/nodebb-plugin-sso-eveseat)  
 This NodeBB plugin allows users login/register via their EVE SeAT account.
 
+### Installing different versions
+Sometimes it can be useful to install a version different than the latest version, for example if you want to install an older version of a plugin or if you want to test a bugfix. The easiest way to find all available versions is to go to the packagist site of the plugin by clicking on the version in the available plugins list. On packagist, if you scroll down, to the right you will find a list of all available versions.
+
+#### Blade
+Follow the normal installation steps, but change the `composer require` command to include the package according to the following example:
+
+```bash
+sudo -H -u www-data bash -c 'composer require <package vendor>/<package-name>:<version-name>'
+```
+
+#### Docker
+In your `.env` file, add the version to the package like this:
+
+```
+SEAT_PLUGINS=<vendor>/<package>:<version>,cryptaeve/seat-squad-sync:4.0.2
+```
+Next, restart the stack as usual.
+
+```bash
+docker-compose down
+docker-compose up -d
+```
