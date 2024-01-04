@@ -124,10 +124,12 @@ After running the above command wait for containers affected to rebuild. If SeAT
 #### Library Packages
 These packages provide utilities for other packages and usually don't need to be installed manually.
 
-| Package                                                                     | Version                                                                                                                                                             | Description |
-|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| ----------- |
-| [warlof/seat-connector](https://github.com/zenobio93/seat-connector)        | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-connector/v/stable?style=flat-square)](https://packagist.org/packages/warlof/seat-connector)           | A generic connector module that handles invites and roles management with any registered platform |
-| [recursivetree/seat-treelib](https://github.com/recursivetree/seat-treelib) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-treelib/v/stable?style=flat-square)](https://packagist.org/packages/recursivetree/seat-treelib) | A module that contains shared code for all `recursivetree/*` plugins |
+| Package                                                                             | Version                                                                                                                                                                     | Description                                                                                       |
+|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [warlof/seat-connector](https://github.com/zenobio93/seat-connector)                | [![Latest Stable Version](https://poser.pugx.org/warlof/seat-connector/v/stable?style=flat-square)](https://packagist.org/packages/warlof/seat-connector)                   | A generic connector module that handles invites and roles management with any registered platform |
+| [recursivetree/seat-treelib](https://github.com/recursivetree/seat-treelib)         | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-treelib/v/stable?style=flat-square)](https://packagist.org/packages/recursivetree/seat-treelib)         | A module that contains shared code for all `recursivetree/*` plugins                              |
+| [recursivetree/seat-prices-core](https://github.com/recursivetree/seat-prices-core) | [![Latest Stable Version](https://poser.pugx.org/recursivetree/seat-prices-core/v/stable?style=flat-square)](https://packagist.org/packages/recursivetree/seat-prices-core) | This plugin provides a price provider system for all plugins dealing with prices. Seat 5.x only.  |
+
 
 #### Deprecated packages
 
