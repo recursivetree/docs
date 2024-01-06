@@ -31,13 +31,13 @@ If you are presented with an error below similar to this after "Updating Depende
 === "Docker (SeAT 5.x - using Traefik)"
 
     ```bash
-    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml -d up
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml up -d
     ```
 
 === "Docker (SeAT 5.x - using reverse proxy)"
 
     ```bash
-    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml -d up
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d
     ```
 
 !!! note
@@ -74,13 +74,13 @@ For the change to take effect, you need to reload the stack:
 === "Docker (SeAT 5.x - using Traefik)"
 
     ```bash
-    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml -d up
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml up -d
     ```
 
 === "Docker (SeAT 5.x - using reverse proxy)"
 
     ```bash
-    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml -d up
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d
     ```
 
 The containers will take a few moments to settle down after which you can reload the failed the request for a detailed error message and code stack trace.

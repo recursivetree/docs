@@ -44,13 +44,13 @@ Once you have made a configuration change, save the `.env` file and restart the 
 === "Docker (SeAT 5.x - using Traefik)"
 
     ```bash
-    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml -d up
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml up -d
     ```
 
 === "Docker (SeAT 5.x - using reverse proxy)"
 
     ```bash
-    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml -d up
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d
     ```
 
 

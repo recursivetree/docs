@@ -62,7 +62,7 @@ An example of adding these to your Web UI container is provided below:
     #      - /opt/seat-docker/custom/custom-layout.css:/var/www/seat/public/custom-layout.css
     ```
 
-    Once you have placed the files you will need to run `docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml -d up` for it to take effect.
+    Once you have placed the files you will need to run `docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml up -d` for it to take effect.
 
 === "SeAT 5 (using proxy)"
 
@@ -77,7 +77,7 @@ An example of adding these to your Web UI container is provided below:
     #      - /opt/seat-docker/custom/custom-layout.css:/var/www/seat/public/custom-layout.css
     ```
 
-    Once you have placed the files you will need to run `docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml -d up` for it to take effect.
+    Once you have placed the files you will need to run `docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d` for it to take effect.
 
 An example of a customized login page using `custom-layout-mini.css` would be:
 
