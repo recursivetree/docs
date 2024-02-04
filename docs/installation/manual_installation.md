@@ -46,7 +46,7 @@ Before we get to installing SeAT, lets ensure that your operating system is up t
 SeAT relies **heavily** on a database to function. Everything it learns is stored here, along with things such as user accounts for your users.
 It comes without saying that database security is a very important aspect too. So, ensure that you choose very strong passwords for your installation where required.
 
-This document describes using MariaDB, but you can use MySQL as well. Just double check the [requirements](requirements.md).
+SeAT officially supports just MariaDB. Using MySQL or PostreSQL might appear to work on the surface, however it is likely that you will run into issues due to differences between the databases later down the line, and almost no testing with them is done during development.
 
 We need to ensure that we have the latest MariaDB installed. To help with this, MariaDB provides an official repository to get the latest versions.
 
@@ -133,9 +133,9 @@ Reload privilege tables now? [Y/n] y
 
 That concludes the installation of the database server and securing it.
 
-Next, we need to create an actual user and database for SeAT to use on the newly installed server. To do this we use the `mysql` command line client and enter a few commands as the `root` user to create the database and the user that will be accessing the server. Let get to it.
+Next, we need to create an actual user and database for SeAT to use on the newly installed server. To do this we use the `mariadb` command line client and enter a few commands as the `root` user to create the database and the user that will be accessing the server. Let get to it.
 
-Fire up the `mysql` client as root by running:
+Fire up the `mariadb` client as root by running:
 
 ```bash
 mariadb -uroot -p
@@ -381,7 +381,7 @@ sudo -H -u www-data bash -c 'php /var/www/seat/artisan db:seed --class=Seat\\Ser
 
 #### EVE Sde Update
 
-SeAT makes use of a number of tables from the EVE [Static Data Exports](https://developers.eveonline.com/resource/resources). MySQL conversions of this data is available at [https://www.fuzzwork.co.uk/dump/](https://www.fuzzwork.co.uk/dump/) and used in SeAT.
+SeAT makes use of a number of tables from the EVE [Static Data Exports](https://developers.eveonline.com/resource/resources). MariaDB conversions of this data is available at [https://www.fuzzwork.co.uk/dump/](https://www.fuzzwork.co.uk/dump/) and used in SeAT.
 
 To update to the [latest SDE](https://github.com/eveseat/resources/blob/master/tools/generate_sde_json.php#L22) within SeAT, run:
 
