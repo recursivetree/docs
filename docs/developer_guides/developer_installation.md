@@ -9,7 +9,7 @@ For development, plugins and the seat core are treated the same. When working on
 any other plugin. This is also how core packages are implemented: Internally they are also just a plugin, only that they 
 are considered the core and that other plugins build on top of them.
 
-The SeAT docker image is built in a way to prefer development installations over others. While the docker image always downloads and installs
+The SeAT docker image is built in a way to prefer development installations of packages over plugins from `.env` and the core. While the docker image always downloads and installs
 the core packages, when it finds a local development install of a core package, it uses that over the latest version from packagist.
 
 ## Setup Process
