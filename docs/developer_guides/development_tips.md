@@ -54,7 +54,7 @@ Cross-package interaction is at the heart of SeAT. For example, plugins use the 
 this is not possible the other way around. The seat core can run without any plugin. This implies that the plugin can have a relation pointing from a plugin model to a core model, but not the other
 way around.
 
-In SeAT, there is a system of injectable relations that helps with this. In short, to any model extending from `\Seat\Services\Models\ExtensibleModel`, you can attack relations similar to how you
+In SeAT, there is a system of injectable relations that helps with this. In short, to any model extending from `\Seat\Services\Models\ExtensibleModel`, you can attach relations similar to how you
 attach observers. 
 
 First, you create a model extension class containing the relations you want to add to the base model. This extension class should extend from the base model.
