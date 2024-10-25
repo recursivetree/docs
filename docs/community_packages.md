@@ -85,13 +85,13 @@ SEAT_PLUGINS=denngarr/seat-fitting,cryptaeve/seat-squad-sync
 === "Docker (SeAT 5.x - using Traefik)"
 
     ```bash
-    docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml up -d
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.traefik.yml up -d
     ```
 
 === "Docker (SeAT 5.x - using reverse proxy)"
 
     ```bash
-    docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d
+    docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d
     ```
 
 After running the above command wait for containers affected to rebuild. If SeAT does not come back up refer to [Troubleshooting](https://eveseat.github.io/docs/troubleshooting/) for more insight.
