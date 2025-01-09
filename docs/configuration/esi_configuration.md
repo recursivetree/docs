@@ -21,19 +21,23 @@ A bit of setup work is needed in order to have your SeAT setup ready for SSO int
 
 ## Register your application
 
-Browse to the [EVE Online Developers portal] and create a new Application.
+Browse to the [EVE Online Developers portal] and open the application management page. You might be asked to log in with your EVE account.
 
-![new sso application](https://i.imgur.com/QcedExJ.png)
+![developer_page_login](../img/eve-developer-page-login.jpg)
+
+Create a new application.
+
+![developer_page_login](../img/eve-developer-page-new-application.jpg)
 
 Give your application a **meaningful** *Name* and a *Description*. Users will see this name when they review the access Third Party applications have to their account so keep that in mind when registering your application.
 
-![new sso application](https://i.imgur.com/zqhQ69H.png)
+![new sso application](../img/eve-developer-page-application-name.jpg)
 
-Next, set the connection type to *Authentication & API Access* (1), select the *ESI Scopes* you want (probably all of them) (2) and specify the *Callback URL* (3)
+Next, specify the *Callback URL* and select the *ESI Scopes* you want (probably all of them).
 
-To select *ESI Scopes* you can search for them in *Available Scopes* (2) and select the desired scope. The selected scope then will moved to (3).
+You can also expand scope categories to configure each scope individually.
 
-![new sso application](https://i.imgur.com/70vLD6V.png)
+![new sso application](../img/eve-developer-page-application-settings.jpg)
 
 !!! note "Note on the Callback URL"
 
@@ -41,13 +45,15 @@ To select *ESI Scopes* you can search for them in *Available Scopes* (2) and sel
 
     For example, assuming you are hosting SeAT at `https://this.is.seat/`, then the Callback URL will be `https://this.is.seat/auth/eve/callback`. If you have SeAT in a sub folder on your web server, remember to add the folder name before `/auth/eve/callback`.
 
-With the new application created, you will now have the `EVE_CLIENT_ID`, `EVE_CLIENT_SECRET` that you need to configure in SeAT itself. Take note of these values.
+Create the application.
 
-![new sso application](https://i.imgur.com/bjEip1X.png)
+With the new application created, you should be redirected to a page showing the *Client ID* and *Client Secret* configuration parameters of the application. Take note of these values.
+
+![new sso application](../img/eve-developer-page-application-details.jpg)
 
 ## Set config parameters in `.env` file
 
-We are almost done. The next thing to do is to add the configuration parameters to our SeAT installs `.env` file. Browse to your SeAT installation directory and edit the `.env` file (note this is a hidden file and wont show up when you just type `ls`).
+We are almost done. The next thing to do is to add these configuration parameters to our SeAT installs `.env` file. Browse to your SeAT installation directory and edit the `.env` file (note this is a hidden file and wont show up when you just type `ls`. You ca use `ls -a` to also include hidden files).
 
 Look for the following section of the file and populate the values with those you got when you created an application on the developers site:
 
@@ -78,5 +84,5 @@ Your `.env` file is located in `/opt/seat-docker`. Rebuild your app after settin
     docker compose -f docker-compose.yml -f docker-compose.mariadb.yml -f docker-compose.proxy.yml up -d
     ```
 
-[EVE Online Developers portal]: https://developers.eveonline.com/applications
+[EVE Online Developers portal]: https://developers.eveonline.com/
 [file]: https://github.com/eveseat/seat/blob/b067bd3e742a79c35b5fa44ff77380a9187a27cf/.env.example#L21-L23
